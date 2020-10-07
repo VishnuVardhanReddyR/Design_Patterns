@@ -12,7 +12,7 @@ public class Subject {
     public void removeObserver(Observer observer){
         observers.remove(observer);
     }
-    public void notifyObserver(){
+    public void notifyObservers(){
         for(Observer observer : observers){
             observer.update();
         }
