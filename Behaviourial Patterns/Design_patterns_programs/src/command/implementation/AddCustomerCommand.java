@@ -3,7 +3,7 @@ package command.implementation;
 import command.implementation.fx.Command;
 
 public class AddCustomerCommand implements Command {
-    private CustomerService service;
+    private final CustomerService service;
 
     public AddCustomerCommand(CustomerService service) {
         this.service = service;
